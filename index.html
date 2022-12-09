@@ -73,81 +73,109 @@
     <!-- END Modal -->
 
     <!-- START Display Mode Tab -->
-    <div class="container justify-content-center">
-        <div class="row justify-content-center">
-            <div class="col-1">
-                <button type="button" class="btn btn-outline-dark"><span><i class="fa-solid fa-grip"></i></span></button>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-outline-dark"><span><i class="fa-regular fa-grid"></i></span></button>
-            </div>
-        </div>
+    <div class="container-fluid py-2">
+        <ul class="nav justify-content-center gap-2" id="display-select-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link btn btn-primary" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid-display" type="button" role="tab" aria-controls="grid-display" aria-selected="true">
+                    <i class="fa-solid fa-table-cells text-white"></i>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link btn btn-primary" id="cards-tab" data-bs-toggle="tab" data-bs-target="#cards-display" type="button" role="tab" aria-controls="cards-display" aria-selected="false">
+                    <i class="fa-solid fa-square text-white"></i>
+                </button>
+            </li>
+        </ul>        
     </div>
     <!-- END Display Mode Tab -->
 
-    <!-- START Grid Display Mode -->
-    <div class="container">
-        <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
+    <div class="tab-content" id="display-select-tab-content">
+        <!-- START Grid Display Mode -->
+        <div id="grid-display" class="tab-pane fade show active container-fluid justify-content-center" tabindex="0">
+
+            <div class="row g-0 g-sm-1 g-md-2">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="./images/gonçalo-ramos.jpg" class="img-fluid" alt="Gonçalo Ramos">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="./images/joao-felix.jpg" class="img-fluid" alt="Gonçalo Ramos">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="./images/ronaldo-thebest.jpg" class="img-fluid" alt="Gonçalo Ramos">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="./images/rafael-guerreiro.jpg" class="img-fluid" alt="Gonçalo Ramos">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="./images/joao-felix.jpg" class="img-fluid" alt="Gonçalo Ramos">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="./images/gonçalo-ramos.jpg" class="img-fluid" alt="Gonçalo Ramos">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="./images/joao-felix.jpg" class="img-fluid" alt="Gonçalo Ramos">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="./images/ronaldo-thebest.jpg" class="img-fluid" alt="Gonçalo Ramos">
+                </div>
+            </div>
+            
         </div>
+        <!-- END Grid Display Mode -->
+
+        <!-- START Cards display mode -->
+        <div id="cards-display" class="tab-pane fade container-fluid justify-content-center" tabindex="1">
+
+            <div class="row justify-content-center my-3">
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                    <div class="card">
+                        <div class="card-body d-flex p-0">
+                            <h4 class="card-title m-1 p-1">Gonçalo Ramos</h4>
+                            <span class="position-absolute top-end-customized text-secondary">12/22</span>
+                        </div>                    
+                        <img src="./images/gonçalo-ramos.jpg" class="img-fluid" alt="Portuguese Football player Gonçalo Ramos">
+                        <div class="card-body p-1">
+                            <span><strong>243.000 <i class="fa-solid fa-heart"></i> Likes</strong></span>
+                            <p>This is the future best striker of Portugal. Meet Gonçalo Ramos!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center my-3">
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                    <div class="card">
+                        <div class="card-body d-flex p-0">
+                            <h4 class="card-title m-1 p-1">João Félix</h4>
+                            <span class="position-absolute top-end-customized text-secondary">09/22</span>
+                        </div>                    
+                        <img src="./images/joao-felix.jpg" class="img-fluid" alt="Portuguese Football player Gonçalo Ramos">
+                        <div class="card-body p-1">
+                            <span><strong>1.102.030 <i class="fa-solid fa-heart"></i> Likes</strong></span>
+                            <p>The magic player. This is the "O Mágico" João Félix!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center my-3">
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                    <div class="card">
+                        <div class="card-body d-flex p-0">
+                            <h4 class="card-title m-1 p-1">Cristiano Ronaldo</h4>
+                            <span class="position-absolute top-end-customized text-secondary">12/22</span>
+                        </div>                    
+                        <img src="./images/ronaldo-thebest.jpg" class="img-fluid" alt="Portuguese Football player Gonçalo Ramos">
+                        <div class="card-body p-1">
+                            <span><strong>11.560.020 <i class="fa-solid fa-heart"></i> Likes</strong></span>
+                            <p>The GOAT! The best player that ever lived!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        <!-- END Cards Display Mode -->
     </div>
-    <!-- END Grid Display Mode -->
-
-    <!-- START Cards display mode -->
-    <div class="container-fluid justify-content-center">
-
-        <div class="row justify-content-center my-3">
-            <div class="col-12 col-sm-10 col-md-8 col-lg-6">
-                <div class="card">
-                    <div class="card-body d-flex p-0">
-                        <h4 class="card-title m-1 p-1">Gonçalo Ramos</h4>
-                        <span class="position-absolute top-end-customized text-secondary">12/22</span>
-                    </div>                    
-                    <img src="./images/gonçalo-ramos.jpg" class="img-fluid" alt="Portuguese Football player Gonçalo Ramos">
-                    <div class="card-body p-1">
-                        <span><strong>243.000 <i class="fa-solid fa-heart"></i> Likes</strong></span>
-                        <p>This is the future best striker of Portugal. Meet Gonçalo Ramos!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center my-3">
-            <div class="col-12 col-sm-10 col-md-8 col-lg-6">
-                <div class="card">
-                    <div class="card-body d-flex p-0">
-                        <h4 class="card-title m-1 p-1">João Félix</h4>
-                        <span class="position-absolute top-end-customized text-secondary">09/22</span>
-                    </div>                    
-                    <img src="./images/joao-felix.jpg" class="img-fluid" alt="Portuguese Football player Gonçalo Ramos">
-                    <div class="card-body p-1">
-                        <span><strong>1.102.030 <i class="fa-solid fa-heart"></i> Likes</strong></span>
-                        <p>The magic player. This is the "O Mágico" João Félix!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center my-3">
-            <div class="col-12 col-sm-10 col-md-8 col-lg-6">
-                <div class="card">
-                    <div class="card-body d-flex p-0">
-                        <h4 class="card-title m-1 p-1">Cristiano Ronaldo</h4>
-                        <span class="position-absolute top-end-customized text-secondary">12/22</span>
-                    </div>                    
-                    <img src="./images/ronaldo-thebest.jpg" class="img-fluid" alt="Portuguese Football player Gonçalo Ramos">
-                    <div class="card-body p-1">
-                        <span><strong>11.560.020 <i class="fa-solid fa-heart"></i> Likes</strong></span>
-                        <p>The GOAT! The best player that ever lived!</p>
-                    </div>
-                </div>
-            </div>
-        </div>        
-    </div>
-    <!-- END Cards Display Mode -->
-
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
